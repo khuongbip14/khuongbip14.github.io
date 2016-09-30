@@ -1,246 +1,268 @@
-<!DOCTYPE html>
-<html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
+<!doctype html>
+<html lang="en-US" class="no-js one-page-layout" data-classic-layout="false" data-mobile-classic-layout="false" data-prev-animation="16" data-next-animation="15" data-random-animation="false">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="en" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trần Khương | Porfolio</title>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montserrat:400,700&#038;subset=latin' type='text/css' media='all' />
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic&#038;subset=latin' type='text/css' media='all' />
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    opacity: 0.7;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    <meta property="og:title" content="Trần Khương | Porfolio" />
+    <meta property="og:description" content=" The only person that can stop me is ... me - Derrick Rose " />
+    <meta property="og:image" itemprop="thumbnailUrl" content="http://trankhuong14.github.io/assets/images/home-1.jpg" />
+    <meta property="og:url" content="http://khuongbip14.github.com" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Trần Khương" />
+    <meta http-equiv="refresh" content="1800" />
+    <meta name="description" content="Copy is skill <Khuong> " />
+    <meta name="keywords" content="Trần Khương| Porfolio" />
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('img_parallax1.jpg');
-    min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("img_parallax2.jpg");
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("img_parallax3.jpg");
-    min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-#googleMap {
-    width: 100%;
-    height: 400px;
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%);
-}
-
-/* Turn off parallax scrolling for tablets and mobiles */
-@media only screen and (max-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
+    <link rel='stylesheet' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='assets/css/pe-icon-7-stroke.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='assets/css/fontello.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='assets/css/nprogress.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='assets/css/magnific-popup.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='assets/css/uniform.default.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='assets/css/animations.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='assets/css/main.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='assets/css/768.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='assets/css/wp-fix.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='assets/css//style.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <script type='text/javascript' src='assets/js/jquery.js'></script>
+    <script type='text/javascript' src='assets/js/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='assets/js/modernizr.min.js'></script>
+    <meta name="generator" content="" />
+    <link rel="canonical" href="http://khuongbip14.github.io" />
+    <link rel='shortlink' href='http://khuongbip14.github.io' />
+    <script>
+    function ColorLuminance(hex, lum) {
+        hex = String(hex).replace(/[^0-9a-f]/gi, '');
+        if (hex.length < 6) {
+            hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+        }
+        lum = lum || 0;
+        var rgb = "#",
+            c, i;
+        for (i = 0; i < 3; i++) {
+            c = parseInt(hex.substr(i * 2, 2), 16);
+            c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
+            rgb += ("00" + c).substr(c.length);
+        }
+        return rgb;
     }
-}
-</style>
-<body>
+    jQuery(document).ready(function($) {
+        color = ColorLuminance('#8acb82', -0.15);
+        var styleCss = '<style type="text/css">' +
+            '.section-title h2:after, .section-title h2:before { background-color: ' + color + '; }' +
+            '</style>';
+        $('body').append(styleCss);
+    });
+    jQuery(document).ready(function($) {
+        $('.one-page-layout .site-main > section:nth-of-type(1)').toggleClass('light-text');
+    });
+    jQuery(document).ready(function($) {
+        $('.one-page-layout .site-main > section:nth-of-type(6)').toggleClass('light-text');
+    });
+    </script>
+    <!--[if lt IE 9]>
+    <script src="assets/js/ie.js"></script>
+  <![endif]-->
+    <link rel="icon" href="assets/images/dimond.png" sizes="32x32" />
+    <link rel="icon" href="assets/images/dimond.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="assets/images/dimond.png" />
+    <meta name="msapplication-TileImage" content="assets/images/dimond.png" />
+</head>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <ul class="w3-navbar" id="myNavbar">
-    <li><a href="#" class="w3-padding-large">HOME</a></li>
-    <li class="w3-hide-small w3-right">
-      <a href="#" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a>
-    </li>
-  </ul>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-opacity w3-display-container">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-section">
-      <p><b>My Name</b></p><br>
-      <img src="https://unsplash.it/235/235?image=91" class="w3-circle" alt="Photo of Me">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-section">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="img_p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img_p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img_p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img_p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="img_p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img_p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img_p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img_p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" style="max-width:100%">
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large"></div>
-    </div>
-    <div class="w3-col m8 w3-container w3-section">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <p>Swing by for a cup of coffee, or leave me a note:</p>
-      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-        <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
+<body class="home page page-id-185 page-template page-template-template-homepage page-template-template-homepage-php">
+    <div id="page" class="hfeed site">
+        <header id="masthead" class="header" role="banner">
+            <a class="menu-toggle toggle-link"></a>
+            <h1 class="site-title mobile-title">Trần Khương</h1>
+            <div class="header-wrap">
+                <img alt="Empathy" src="assets/images/dimond.png">
+                <h1 class="site-title">Trần Khương</h1>
+                <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+                    <div class="nav-menu">
+                        <ul class="menu-auto">
+                        </ul>
+                        <script>
+                        jQuery(document).ready(function($) {
+                            var menu_html = "";
+                            $('#main').find('section').each(function() {
+                                var id = $(this).attr('id');
+                                var icon = $(this).find('.page-title  i').attr('class');
+                                var title = $(this).find('.page-title').text();
+                                var menu_item = '<li><a href="#/' + id + '"><i class="' + icon + '"></i>' + title + '</a></li>';
+                                menu_html += menu_item;
+                                $('.menu-auto').html(menu_html);
+                            });
+                        });
+                        </script>
+                    </div>
+                </nav>
+                <div class="header-search">
+                    <form role="search" id="search-form" method="get" action="">
+                        <input type="text" id="search" name="s" required="required" placeholder="enter word">
+                        <input type="submit" id="search-submit" title="Search" value="&#8594;">
+                    </form>
+                </div>
+                <div class="header-bottom">
+                    <div class="textwidget">
+                        <ul class="social">
+                            <!-- <li>
+                                <a target="_blank" href="https://www.facebook.com/Derrick.Dam">
+                                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li> -->
+                            <li>
+                                <a target="_blank" href="https://github.com/khuongbip14">
+                                  <i class="fa fa-github-alt" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copy-text">
+                        <div id="text-2" class="widget_text">
+                            <div class="textwidget">
+                                <p>© 2016 Trần Khương</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="main" class="site-main">
+            <section id="home" class="pt-page page-layout home-section has-bg-img" style="background-image: url( assets/images/3.jpg);">
+                <div class="content">
+                    <div class="layout-medium">
+                        <h1 class="page-title" style="display: none;">
+                          <i class="pe-7s-home"></i>home
+                        </h1>
+                        <h4>Hi, I am</h4>
+                        <h2>Trần Khương</h2>
+                        <h4>I am <strong id="typist-element" data-typist=" a junior., a  graphic designer .">a coder.</strong></h4>
+                    </div>
+                </div>
+            </section>
+            <section id="about-me" class="pt-page page-layout ">
+                <div class="content">
+                    <div class="layout-medium">
+                        <h1 class="page-title"><i class="pe-7s-user"></i>about me</h1>
+                        <!--
+                        <div class="section-title center">
+                            <h2><i>Services</i></h2>
+                        </div>
+                        
+                        
+                        
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <div class="service">
+                                    <p><img class="alignnone size-full wp-image-228" src="assets/images/icon-01.png" alt="icon-01" width="512" height="512" srcset="assets/images/icon-01-150x150.png 150w, assets/images/icon-01-300x300.png 300w, assets/images/icon-01-500x500.png 500w, assets/images/icon-01.png 512w" sizes="(max-width: 512px) 100vw, 512px" /></p>
+                                    <h4>OUTSOURCE</h4>
+                                    <p>I can fix any problem of your websites, and make it wonderful. Also create something wonderful for you
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="service">
+                                    <p><img class="alignnone size-full wp-image-229" src="assets/images/icon-02.png" alt="icon-02" width="512" height="512" srcset="assets/images/icon-02-150x150.png 150w, assets/images/icon-02-300x300.png 300w, assets/images/icon-02-500x500.png 500w, assets/images/icon-02.png 512w" sizes="(max-width: 512px) 100vw, 512px" /></p>
+                                    <h4>WEB DEV</h4>
+                                    <p>Create something new web-app, make a tool, make your job easy to work, write any script in my freetime for any task i want 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="service">
+                                    <p><img class="alignnone size-full wp-image-230" src="assets/images/icon-03.png" alt="icon-03" width="512" height="512" srcset="assets/images/icon-03-150x150.png 150w, assets/images/icon-03-300x300.png 300w, assets/images/icon-03-500x500.png 500w, assets/images/icon-03.png 512w" sizes="(max-width: 512px) 100vw, 512px" /></p>
+                                    <h4>MANAGEMENT</h4>
+                                    <p>with a lot of experiment about CMS, i can make your management job so easily, you just read report, see a chart and never mind how it's work
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="service">
+                                    <p><img class="alignnone size-full wp-image-231" src="assets/images/icon-04.png" alt="icon-04" width="512" height="512" srcset="assets/images/icon-04-150x150.png 150w, assets/images/icon-04-300x300.png 300w, assets/images/icon-04-500x500.png 500w, assets/images/icon-04.png 512w" sizes="(max-width: 512px) 100vw, 512px" /></p>
+                                    <h4>PROBLEM SOLVER</h4>
+                                    <p>Error, Warning, Bug ... of course, it's a part of me. I'm not a tester but, i can create script test for automation testing to make testing is easier 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        <div class="section-title center">
+                            <h2><i>Work Process</i></h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 col-xs-4">
+                                <div class="process">
+                                    <p><i class="fa fa-search" aria-hidden="true"></i></p>
+                                    <h4>DISCOVER</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-xs-4">
+                                <div class="process">
+                                    <p><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
+                                    <h4>IDEA</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-xs-4">
+                                <div class="process">
+                                    <p><i class="fa fa-code" aria-hidden="true"></i></p>
+                                    <h4>CODE</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-xs-4">
+                                <div class="process">
+                                    <p><i class="fa fa-server" aria-hidden="true"></i></p>
+                                    <h4>DEVELOP</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-xs-4">
+                                <div class="process">
+                                    <p><i class="fa fa-chrome" aria-hidden="true"></i></p>
+                                    <h4>TEST</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-xs-4">
+                                <div class="process">
+                                    <p><i class="fa fa-rocket" aria-hidden="true"></i></p>
+                                    <h4>LAUNCH</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="section-title center">
+                            <h2><i>Other Pages</i></h2>
+                        </div>
+                        <p class="center">
+                          <a class="button" href="404.html">404</a> 
+                        </p> -->
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
-        </div>
-      </div>
-      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
-      <button class="w3-btn w3-section w3-right">SEND</button>
     </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
-  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
-</footer>
- 
-<!-- Add Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-function initialize() {
-var mapProp = {
-  center: myCenter,
-  zoom: 12,
-  scrollwheel: false,
-  draggable: false,
-  mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-  position: myCenter,
-});
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
-    }
-}
-</script>
-
+    <div class="p-overlay"></div>
+    <div class="p-overlay"></div>
+    <div class="site-alert animated"></div>
+    <script type='text/javascript' src='assets/js/jquery.address-1.5.min.js'></script>
+    <script type='text/javascript' src='assets/js/smoothscroll.js'></script>
+    <script type='text/javascript' src='assets/js/nprogress.js'></script>
+    <script type='text/javascript' src='assets/js/fastclick.js'></script>
+    <script type='text/javascript' src='assets/js/typist.js'></script>
+    <script type='text/javascript' src='assets/js/imagesloaded.pkgd.min.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.isotope.min.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.fitvids.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.validate.min.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.uniform.min.js'></script>
+    <script type='text/javascript' src='assets/js/jquery.magnific-popup.min.js'></script>
+    <script type='text/javascript' src='assets/js/socialstream.jquery.js'></script>
+    <script type='text/javascript' src='assets/js/main.js'></script>
+    <script type='text/javascript' src='assets/js/wp-fix.js'></script>
+    <script type='text/javascript' src='assets/js/wp-embed.min.js'></script>
 </body>
+
 </html>
