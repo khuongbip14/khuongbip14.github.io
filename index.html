@@ -1,268 +1,262 @@
-<!doctype html>
-<html lang="en-US" class="no-js one-page-layout" data-classic-layout="false" data-mobile-classic-layout="false" data-prev-animation="16" data-next-animation="15" data-random-animation="false">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="language" content="en" />
-    <meta name="robots" content="index, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trần Khương | Porfolio</title>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montserrat:400,700&#038;subset=latin' type='text/css' media='all' />
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic&#038;subset=latin' type='text/css' media='all' />
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
 
-    <meta property="og:title" content="Trần Khương | Porfolio" />
-    <meta property="og:description" content=" The only person that can stop me is ... me - Derrick Rose " />
-    <meta property="og:image" itemprop="thumbnailUrl" content="http://trankhuong14.github.io/assets/images/home-1.jpg" />
-    <meta property="og:url" content="http://khuongbip14.github.com" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Trần Khương" />
-    <meta http-equiv="refresh" content="1800" />
-    <meta name="description" content="Copy is skill <Khuong> " />
-    <meta name="keywords" content="Trần Khương| Porfolio" />
-
-    <link rel='stylesheet' href='assets/css/bootstrap.min.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='assets/css/pe-icon-7-stroke.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='assets/css/fontello.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='assets/css/nprogress.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='assets/css/magnific-popup.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='assets/css/uniform.default.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='assets/css/animations.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='assets/css/main.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='assets/css/768.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='assets/css/wp-fix.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='assets/css//style.css' type='text/css' media='all' />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <script type='text/javascript' src='assets/js/jquery.js'></script>
-    <script type='text/javascript' src='assets/js/jquery-migrate.min.js'></script>
-    <script type='text/javascript' src='assets/js/modernizr.min.js'></script>
-    <meta name="generator" content="" />
-    <link rel="canonical" href="http://khuongbip14.github.io" />
-    <link rel='shortlink' href='http://khuongbip14.github.io' />
-    <script>
-    function ColorLuminance(hex, lum) {
-        hex = String(hex).replace(/[^0-9a-f]/gi, '');
-        if (hex.length < 6) {
-            hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
-        }
-        lum = lum || 0;
-        var rgb = "#",
-            c, i;
-        for (i = 0; i < 3; i++) {
-            c = parseInt(hex.substr(i * 2, 2), 16);
-            c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
-            rgb += ("00" + c).substr(c.length);
-        }
-        return rgb;
-    }
-    jQuery(document).ready(function($) {
-        color = ColorLuminance('#8acb82', -0.15);
-        var styleCss = '<style type="text/css">' +
-            '.section-title h2:after, .section-title h2:before { background-color: ' + color + '; }' +
-            '</style>';
-        $('body').append(styleCss);
-    });
-    jQuery(document).ready(function($) {
-        $('.one-page-layout .site-main > section:nth-of-type(1)').toggleClass('light-text');
-    });
-    jQuery(document).ready(function($) {
-        $('.one-page-layout .site-main > section:nth-of-type(6)').toggleClass('light-text');
-    });
-    </script>
-    <!--[if lt IE 9]>
-		<script src="assets/js/ie.js"></script>
-	<![endif]-->
-    <link rel="icon" href="assets/images/dimond.png" sizes="32x32" />
-    <link rel="icon" href="assets/images/dimond.png" sizes="192x192" />
-    <link rel="apple-touch-icon-precomposed" href="assets/images/dimond.png" />
-    <meta name="msapplication-TileImage" content="assets/images/dimond.png" />
-</head>
-
-<body class="home page page-id-185 page-template page-template-template-homepage page-template-template-homepage-php">
-    <div id="page" class="hfeed site">
-        <header id="masthead" class="header" role="banner">
-            <a class="menu-toggle toggle-link"></a>
-            <h1 class="site-title mobile-title">Trần Khương</h1>
-            <div class="header-wrap">
-                <img alt="Empathy" src="assets/images/dimond.png">
-                <h1 class="site-title">Trần Khương</h1>
-                <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
-                    <div class="nav-menu">
-                        <ul class="menu-auto">
-                        </ul>
-                        <script>
-                        jQuery(document).ready(function($) {
-                            var menu_html = "";
-                            $('#main').find('section').each(function() {
-                                var id = $(this).attr('id');
-                                var icon = $(this).find('.page-title  i').attr('class');
-                                var title = $(this).find('.page-title').text();
-                                var menu_item = '<li><a href="#/' + id + '"><i class="' + icon + '"></i>' + title + '</a></li>';
-                                menu_html += menu_item;
-                                $('.menu-auto').html(menu_html);
-                            });
-                        });
-                        </script>
-                    </div>
-                </nav>
-                <div class="header-search">
-                    <form role="search" id="search-form" method="get" action="">
-                        <input type="text" id="search" name="s" required="required" placeholder="enter word">
-                        <input type="submit" id="search-submit" title="Search" value="&#8594;">
-                    </form>
-                </div>
-                <div class="header-bottom">
-                    <div class="textwidget">
-                        <ul class="social">
-                            <!-- <li>
-                                <a target="_blank" href="https://www.facebook.com/Derrick.Dam">
-                                	<i class="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                            </li> -->
-                            <li>
-                                <a target="_blank" href="https://github.com/khuongbip14">
-                                	<i class="fa fa-github-alt" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="copy-text">
-                        <div id="text-2" class="widget_text">
-                            <div class="textwidget">
-                                <p>© 2016 Trần Khương</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div id="main" class="site-main">
-            <section id="home" class="pt-page page-layout home-section has-bg-img" style="background-image: url( assets/images/3.jpg);">
-                <div class="content">
-                    <div class="layout-medium">
-                        <h1 class="page-title" style="display: none;">
-                        	<i class="pe-7s-home"></i>home
-                        </h1>
-                        <h4>Hi, I am</h4>
-                        <h2>Trần Khương</h2>
-                        <h4>I am <strong id="typist-element" data-typist=" a junior., a  graphic designer .">a coder.</strong></h4>
-                    </div>
-                </div>
-            </section>
-            <section id="about-me" class="pt-page page-layout ">
-                <div class="content">
-                    <div class="layout-medium">
-                        <h1 class="page-title"><i class="pe-7s-user"></i>about me</h1>
-                        <!--
-                        <div class="section-title center">
-                            <h2><i>Services</i></h2>
-                        </div>
-                        
-                        
-                        
-                        <div class="row">
-                            <div class="col-sm-6 col-md-3">
-                                <div class="service">
-                                    <p><img class="alignnone size-full wp-image-228" src="assets/images/icon-01.png" alt="icon-01" width="512" height="512" srcset="assets/images/icon-01-150x150.png 150w, assets/images/icon-01-300x300.png 300w, assets/images/icon-01-500x500.png 500w, assets/images/icon-01.png 512w" sizes="(max-width: 512px) 100vw, 512px" /></p>
-                                    <h4>OUTSOURCE</h4>
-                                    <p>I can fix any problem of your websites, and make it wonderful. Also create something wonderful for you
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3">
-                                <div class="service">
-                                    <p><img class="alignnone size-full wp-image-229" src="assets/images/icon-02.png" alt="icon-02" width="512" height="512" srcset="assets/images/icon-02-150x150.png 150w, assets/images/icon-02-300x300.png 300w, assets/images/icon-02-500x500.png 500w, assets/images/icon-02.png 512w" sizes="(max-width: 512px) 100vw, 512px" /></p>
-                                    <h4>WEB DEV</h4>
-                                    <p>Create something new web-app, make a tool, make your job easy to work, write any script in my freetime for any task i want 
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3">
-                                <div class="service">
-                                    <p><img class="alignnone size-full wp-image-230" src="assets/images/icon-03.png" alt="icon-03" width="512" height="512" srcset="assets/images/icon-03-150x150.png 150w, assets/images/icon-03-300x300.png 300w, assets/images/icon-03-500x500.png 500w, assets/images/icon-03.png 512w" sizes="(max-width: 512px) 100vw, 512px" /></p>
-                                    <h4>MANAGEMENT</h4>
-                                    <p>with a lot of experiment about CMS, i can make your management job so easily, you just read report, see a chart and never mind how it's work
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3">
-                                <div class="service">
-                                    <p><img class="alignnone size-full wp-image-231" src="assets/images/icon-04.png" alt="icon-04" width="512" height="512" srcset="assets/images/icon-04-150x150.png 150w, assets/images/icon-04-300x300.png 300w, assets/images/icon-04-500x500.png 500w, assets/images/icon-04.png 512w" sizes="(max-width: 512px) 100vw, 512px" /></p>
-                                    <h4>PROBLEM SOLVER</h4>
-                                    <p>Error, Warning, Bug ... of course, it's a part of me. I'm not a tester but, i can create script test for automation testing to make testing is easier 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        -->
-                        <div class="section-title center">
-                            <h2><i>Work Process</i></h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-2 col-xs-4">
-                                <div class="process">
-                                    <p><i class="fa fa-search" aria-hidden="true"></i></p>
-                                    <h4>DISCOVER</h4>
-                                </div>
-                            </div>
-                            <div class="col-sm-2 col-xs-4">
-                                <div class="process">
-                                    <p><i class="fa fa-lightbulb-o" aria-hidden="true"></i></p>
-                                    <h4>IDEA</h4>
-                                </div>
-                            </div>
-                            <div class="col-sm-2 col-xs-4">
-                                <div class="process">
-                                    <p><i class="fa fa-code" aria-hidden="true"></i></p>
-                                    <h4>CODE</h4>
-                                </div>
-                            </div>
-                            <div class="col-sm-2 col-xs-4">
-                                <div class="process">
-                                    <p><i class="fa fa-server" aria-hidden="true"></i></p>
-                                    <h4>DEVELOP</h4>
-                                </div>
-                            </div>
-                            <div class="col-sm-2 col-xs-4">
-                                <div class="process">
-                                    <p><i class="fa fa-chrome" aria-hidden="true"></i></p>
-                                    <h4>TEST</h4>
-                                </div>
-                            </div>
-                            <div class="col-sm-2 col-xs-4">
-                                <div class="process">
-                                    <p><i class="fa fa-rocket" aria-hidden="true"></i></p>
-                                    <h4>LAUNCH</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="section-title center">
-                            <h2><i>Other Pages</i></h2>
-                        </div>
-                        <p class="center">
-                        	<a class="button" href="404.html">404</a> 
-                        </p> -->
-                    </div>
-                </div>
-            </section>
-        </div>
+<!-- Navbar -->
+<div class="w3-top">
+<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
+  <li class="w3-hide-small"><a href="#" class="w3-padding-large">BAND</a></li>
+  <li class="w3-hide-small"><a href="#" class="w3-padding-large">TOUR</a></li>
+  <li class="w3-hide-small"><a href="#" class=" w3-padding-large">CONTACT</a></li>
+  <li class="w3-hide-small w3-dropdown-hover">
+    <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More">MORE <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="#">Merchandise</a>
+      <a href="#">Extras</a>
+      <a href="#">Media</a>
     </div>
-    <div class="p-overlay"></div>
-    <div class="p-overlay"></div>
-    <div class="site-alert animated"></div>
-    <script type='text/javascript' src='assets/js/jquery.address-1.5.min.js'></script>
-    <script type='text/javascript' src='assets/js/smoothscroll.js'></script>
-    <script type='text/javascript' src='assets/js/nprogress.js'></script>
-    <script type='text/javascript' src='assets/js/fastclick.js'></script>
-    <script type='text/javascript' src='assets/js/typist.js'></script>
-    <script type='text/javascript' src='assets/js/imagesloaded.pkgd.min.js'></script>
-    <script type='text/javascript' src='assets/js/jquery.isotope.min.js'></script>
-    <script type='text/javascript' src='assets/js/jquery.fitvids.js'></script>
-    <script type='text/javascript' src='assets/js/jquery.validate.min.js'></script>
-    <script type='text/javascript' src='assets/js/jquery.uniform.min.js'></script>
-    <script type='text/javascript' src='assets/js/jquery.magnific-popup.min.js'></script>
-    <script type='text/javascript' src='assets/js/socialstream.jquery.js'></script>
-    <script type='text/javascript' src='assets/js/main.js'></script>
-    <script type='text/javascript' src='assets/js/wp-fix.js'></script>
-    <script type='text/javascript' src='assets/js/wp-embed.min.js'></script>
-</body>
+  </li>
+  <li class="w3-hide-small w3-right"><a href="javascript:void(0)" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a></li>
+</ul>
+</div>
 
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <ul class="w3-navbar w3-left-align w3-black">
+    <li><a class="w3-padding-large" href="#">BAND</a></li>
+    <li><a class="w3-padding-large" href="#">TOUR</a></li>
+    <li><a class="w3-padding-large" href="#">CONTACT</a></li>
+    <li><a class="w3-padding-large" href="#">MERCH</a></li>
+  </ul>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1800px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container">
+    <img src="img_la.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container">
+    <img src="img_ny.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container">
+    <img src="img_chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide">THE BAND</h2>
+    <p class="w3-opacity"><i>We love music</i></p>
+    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="img_bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="img_bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="img_bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TOUR DATES</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="img_newyork.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="img_paris.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="img_sanfran.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-btn w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <span onclick="document.getElementById('ticketModal').style.display='none'"
+       class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-btn-block w3-teal w3-padding-12 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-btn w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Comment">
+        <button class="w3-btn w3-section w3-right">SEND</button>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;filter:grayscale(90%);-webkit-filter:grayscale(90%);"></div>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+    
+function initialize() {
+    var mapProp = {
+    center: myCenter,
+    zoom: 12,
+    scrollwheel: false,
+    draggable: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+    
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    
+var marker = new google.maps.Marker({
+    position: myCenter,
+});
+    
+marker.setMap(map);
+}
+    
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
 </html>
+
