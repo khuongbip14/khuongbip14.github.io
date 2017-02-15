@@ -1,9 +1,9 @@
 /*---------------------------------------------------------------
 
-  Project Name: Branten - Personal Portfolio HTML Template
+  Project Name: Lioner Kim - Personal Portfolio HTML 
   File Name: style.css
-  Author: Peng Lam
-  Author URI: http://khaitawng.com
+  Author: Khuong Bip
+  Author URI: http://Khuongbip14.github.com
   Version: 1.0.0
 
 ------------------------------------------------------------------*/
@@ -28,13 +28,24 @@
     13. Mobile Responsive styles
 
 ------------------------------------------------------------------*/
+@font-face {
+  font-family: 'Averta';
+  src:url('../font/Averta_Light.woff');
+  
+  src:url('../font/Averta_Extra_Bold.woff');
+  src:url('../font/Averta.woff');
+}
+@font-face {
+  font-family: 'Averta-Bold';
+  src:url('../font/Averta_Bold.woff');
+}
 
 @import url('http://fonts.googleapis.com/css?family=Playfair+Display:400,700');
 @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 
 body {
     background: rgb(239, 239, 239);
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Averta', sans-serif;
     font-style: normal;
     font-weight: 400;
     overflow-x: hidden;
@@ -46,7 +57,7 @@ body {
 -----------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source SansPro', sans-serif;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0px;
@@ -54,7 +65,9 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
   font-size: 114px;
-  font-weight: 300;
+  font-weight: 500;
+  font-family: 'Averta', sans-serif;
+  color: #434a54;
 }
 
 h2 {
@@ -87,10 +100,11 @@ h5 {
 
 p {
     color: #777;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 300;
     line-height: 28px;
     letter-spacing: 0.2px;
+    font-family: 'Averta';
 }
 
 .font-playfair {
@@ -127,7 +141,7 @@ p {
 .section-btn:hover {
   background: transparent;
   border-color: #000;
-  color: #000;
+  color: #434a54;
 }
 
 
@@ -171,6 +185,8 @@ a:hover, a:active, a:focus {
 .section-title {
   position: relative;
   padding-bottom: 62px;
+  color: #facd12;
+  font-family: 'Averta-Bold';
 }
 
 #about,
@@ -252,9 +268,13 @@ footer {
     background-color: #ffffff;
     padding: 18px 0px;
 }
-
+span {
+  color: #facd12;
+  font-family: 'Averta';
+  font-weight: 600;
+}
 .custom-navbar .navbar-brand {
-    color: #000;
+    color: #656d78;
     font-weight: bold;
     font-size: 3rem;
     line-height: 35px;
@@ -272,7 +292,7 @@ footer {
 
 .custom-navbar .nav li a:hover {
     background: transparent;
-    color: #000;
+    color: #facd12;
 }
 
 .custom-navbar .navbar-nav > li > a:hover,
@@ -282,7 +302,7 @@ footer {
 
 .custom-navbar .nav li.active > a {
     background-color: transparent;
-    color: #000;
+    color: #facd12;
 }
 
 .custom-navbar .navbar-toggle {
@@ -437,7 +457,7 @@ footer {
 }
 
 #contact .form-control:focus {
-  border-color: #999;
+  border-color: #facd12;
 }
 
 #contact input {
@@ -453,8 +473,8 @@ footer {
 }
 
 #contact input[type="submit"]:hover {
-  background: #333;
-  color: #ffffff;
+  background:  #facd12;
+  color: #656d78;
 }
 
 
@@ -463,14 +483,14 @@ footer {
 -----------------------------------------*/
 
 footer {
-    background: #151515;
-    color: #ffffff;
+    background-image: url('../images/footer.png');
+    color: #facd12;
     padding-top: 140px;
     padding-bottom: 140px;
 }
 
 footer .footer-copyright p {
-  font-size: 14px;
+  font-size: 19px;
   letter-spacing: 0.5px;
 }
 
@@ -492,9 +512,9 @@ footer .footer-copyright p {
 }
 
 .social-icon li a {
-    color: #999;
+    color: #facd12;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
@@ -505,7 +525,7 @@ footer .footer-copyright p {
 }
 
 .social-icon li a:hover {
-    color: #ffffff;
+    color: #fee140;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
